@@ -1,0 +1,480 @@
+body {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  height: 568px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco";
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: #f4ecff;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section:first-child {
+  position: absolute;
+  margin-top: -13rem;
+  height: 48.5%;
+  width: 100%;
+}
+section:nth-child(2) {
+  height: 50%;
+  justify-content: flex-end;
+}
+section:last-child {
+  margin: 1rem;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  color: #6624d2;
+}
+.background {
+  width: 80%;
+  background-color: #6624d2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#username,
+#password {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #caaef2;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+.inputclick {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #6624d2;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+.inputwrong {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ff0051;
+  color: #ff0051;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+#login {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: #6624d2;
+}
+#login p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.logtext {
+  font-size: 1rem;
+}
+#SvgIconLoading {
+  height: 30px;
+  width: 30px;
+  fill: #f4ecff;
+}
+#wronginfo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #ff0051;
+  margin-top: 1rem;
+  width: 80%;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7e24fa;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  height: 15px;
+  width: 15px;
+  border-radius: 20%;
+  background-color: #eee;
+  border: 1px #6624d2 solid;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #6624d2;
+  border-radius: 20%;
+  height: 12px;
+  width: 12px;
+  border: 2px #e4d2ff solid;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.logwith {
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem;
+  font-style: italic;
+}
+.facebook,
+.google,
+.twitter {
+  padding: 10px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: #caaef2;
+  height: 20px;
+  width: 20px;
+}
+svg {
+  fill: #6624d2;
+}
+
+.right {
+  width: 100%;
+  height: 50%;
+  background-color: #7e24fa;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.acme {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.logo {
+  position: absolute;
+  margin-top: -1.9rem;
+  margin-left: -1.85rem;
+  height: 45px;
+  width: 45px;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 15%;
+}
+.border {
+  position: relative;
+  height: 65px;
+  width: 65px;
+  padding: 2rem;
+  background-clip: padding-box;
+  border-radius: 15%;
+  background: linear-gradient(45deg, #7e24fa, #caaef2);
+  box-sizing: border-box;
+}
+.hidden {
+  display: none !important;
+}
+#success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50%;
+  background-color: #7e24fa;
+  color: #ffffff;
+}
+.cong {
+  margin: 0;
+  font-size: 2rem;
+}
+.suclog {
+  font-size: 1rem;
+}
+.logout {
+  width: 15%;
+  height: 2rem;
+  color: #7e24fa;
+  font-size: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 1rem;
+}
+@media screen and (min-width: 650px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 900px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco";
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #f4ecff;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section:first-child {
+    position: relative;
+    padding-top: 10%;
+    margin: 0;
+    height: 50%;
+  }
+  section:nth-child(2) {
+    height: 25%;
+    justify-content: center;
+  }
+  section:last-child {
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #6624d2;
+  }
+  .background {
+    width: 50%;
+    background-color: #6624d2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #username,
+  #password {
+    height: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: #caaef2;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+  .inputclick {
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: #6624d2;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+  .inputwrong {
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ff0051;
+    color: #ff0051;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7e24fa;
+  }
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 20%;
+    background-color: #eee;
+    border: 1px #6624d2 solid;
+  }
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #6624d2;
+    border-radius: 20%;
+    height: 15px;
+    width: 15px;
+    border: 5px #e4d2ff solid;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  #login {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #6624d2;
+  }
+  #login p {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .logtext {
+    font-size: 1rem;
+  }
+  #SvgIconLoading {
+    height: 30px;
+    width: 30px;
+    fill: #f4ecff;
+  }
+  #wronginfo {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #ff0051;
+    margin-top: 1rem;
+    width: 60%;
+  }
+  a {
+    text-decoration: none;
+  }
+  .logwith {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+    font-style: italic;
+  }
+  .facebook,
+  .google,
+  .twitter {
+    padding: 10px;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: #caaef2;
+    height: 20px;
+    width: 20px;
+  }
+  svg {
+    fill: #6624d2;
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    background-color: #7e24fa;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding-top: 5%;
+  }
+  .acme {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .logo {
+    position: absolute;
+    margin-top: -1.85rem;
+    margin-left: -1.8rem;
+    height: 50px;
+    width: 50px;
+    padding: 0.7rem;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 15%;
+  }
+  .border {
+    position: relative;
+    height: 78px;
+    width: 78px;
+    padding: 2rem;
+    background-clip: padding-box;
+    border-radius: 15%;
+    background: linear-gradient(45deg, #7e24fa, #caaef2);
+    box-sizing: border-box;
+  }
+  .hidden {
+    display: none !important;
+  }
+  #success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    background-color: #7e24fa;
+    color: #ffffff;
+  }
+  .cong {
+    margin-top: 40%;
+    font-size: 2rem;
+  }
+  .suclog {
+    font-size: 1rem;
+  }
+  .logout {
+    width: 20%;
+    height: 2rem;
+    color: #7e24fa;
+    font-size: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50%;
+  }
+}
